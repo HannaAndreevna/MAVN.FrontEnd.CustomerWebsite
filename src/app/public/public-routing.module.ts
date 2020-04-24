@@ -1,3 +1,4 @@
+import {TransactionStatusPageComponent} from './transaction-status-page/transaction-status-page.component';
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {PublicLayoutComponent} from './public-layout/public-layout/public-layout.component';
@@ -14,6 +15,10 @@ const routes: Routes = [
       {
         path: 'email-confirmation',
         component: EmailConfirmationPageComponent
+      },
+      {
+        path: 'transaction-status',
+        component: TransactionStatusPageComponent
       },
       {
         path: 'reset-password',
