@@ -1,3 +1,7 @@
+$logo-height: 80px;
+$logo-height-mobile: 60px;
+$logo-radius-proportion: 0.25;
+
 .token-logo {
   display: flex;
   justify-content: center;
@@ -5,7 +9,8 @@
   margin-top: 30px;
 
   > img {
-    height: 40px;
+    border-radius: $logo-height * $logo-radius-proportion;
+    height: $logo-height;
   }
 }
 
@@ -15,7 +20,8 @@
     margin-top: 20px;
 
     > img {
-      height: 30px;
+      border-radius: $logo-height-mobile * $logo-radius-proportion;
+      height: $logo-height-mobile;
     }
   }
 }
