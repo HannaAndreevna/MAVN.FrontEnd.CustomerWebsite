@@ -4,11 +4,6 @@
   "newProjectRoot": "projects",
   "projects": {
     "token-customer-website": {
-      "i18n": {
-        "locales": {
-          "de": "src/locale/messages.de-DE.translated.xlf"
-        }
-      },
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -16,6 +11,12 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+        }
+      },
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "de": "src/locale/messages.de-DE.translated.xlf"
         }
       },
       "architect": {
@@ -44,96 +45,19 @@
           "configurations": {
             "de": {
               "aot": true,
-              "budgets": [
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
-                }
-              ],
-            "localize": [
-              "de"
-            ],
-              "outputPath": "dist/token-customer-website",
+              "outputPath": "dist/token-customer-website/de",
+              "baseHref": "/de/",
               "deployUrl": "/de/",
+              "localize": ["de"],
+              "i18nLocale": "de",
               "i18nMissingTranslation": "warning"
             },
-            "de-prod": {
-              "aot": true,
-            "localize": [
-              "de"
-            ],
-              "outputPath": "dist/token-customer-website",
-              "deployUrl": "/de/",
-              "i18nMissingTranslation": "warning",
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": true,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
-                }
-              ]
-            },
             "en": {
-              "budgets": [
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
-                }
-              ],
-              "outputPath": "dist/token-customer-website/en",
               "baseHref": "/en/",
               "deployUrl": "/en/"
             },
-            "en-prod": {
-              "aot": true,
-              "outputPath": "dist/token-customer-website/en",
-              "baseHref": "/en/",
-              "deployUrl": "/en/",
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": true,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
-                }
-              ]
-            },
             "production": {
+              "outputPath": "dist/token-customer-website/",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
