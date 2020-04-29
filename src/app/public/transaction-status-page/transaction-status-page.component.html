@@ -1,0 +1,24 @@
+<div class="modal-dialog modal-confirm">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div [ngClass]=
+      "{'success-icon-box': state, 'fail-icon-box': !state}">
+        <i
+        [ngClass]= "addClassToIcons()">
+          {{state ? '&#xE876;' : '&#xE5CD;'}}
+      </i>
+      </div>
+      <h4 class="modal-title">{{ state ? transactionSuccess : transactionFail }}</h4>
+    </div>
+    <div class="modal-body">
+      <div *ngIf="state">
+        <p class="text-center">There will be an listing of payment details.</p>
+      </div>
+      <p *ngIf="!state" class="text-center">Something went wrong, check your payments details</p>
+    </div>
+    <div class="modal-footer">
+      <button *ngIf="state" class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+      <button *ngIf="!state" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+    </div>
+  </div>
+</div>
