@@ -7,4 +7,5 @@ export interface FooterInfo {
   DownloadAppLink: string;
   TermsAndConditionLink: string;
   PrivacyPolicyLink: string;
+  SupportEmailAddress: string;
 }

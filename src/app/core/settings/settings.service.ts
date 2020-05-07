@@ -22,6 +22,10 @@ export class SettingsService {
     return this._settings && this._settings.CustomerWebsite.CustomerApiUrl;
   }
 
+  get PartnerApiUrl() {
+    return this._settings && this._settings.CustomerWebsite.PartnerApiUrl;
+  }
+
   get androidLink() {
     return this._settings && this._settings.CustomerWebsite.AndroidLink;
   }

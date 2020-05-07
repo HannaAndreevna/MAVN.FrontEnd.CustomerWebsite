@@ -9,6 +9,7 @@ import {EmailConfirmationPageComponent} from './email-confirmation/email-confirm
 import {NotFoundComponent} from './not-found/not-found.component';
 import {ResetPasswordPageComponent} from './reset-password/reset-password.component';
 import {TransactionStatusPageComponent} from './transaction-status-page/transaction-status-page.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {TransactionStatusPageComponent} from './transaction-status-page/transact
   imports: [
     // modules
     CommonModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     PublicRoutingModule,

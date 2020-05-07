@@ -2,6 +2,7 @@
   "CustomerWebsite": {
     "CustomerApiUrl": "https://customer-api.mavn.ch",
     "CustomerApiUrl_localhost_url_example": "http://localhost:64538",
+    "PartnerApiUrl": "https://partner-api.mavn.ch",
     "AndroidLink": "https://mavn.ch",
     "IosLink": "https://mavn.ch"
   }
