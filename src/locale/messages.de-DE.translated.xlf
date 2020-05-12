@@ -10,10 +10,6 @@
         <source>Field has to be whole number</source>
         <target state="translated">Feld muss ganze Zahl sein</target>
       </trans-unit>
-      <trans-unit id="ab31b71295a1bc9475469eec819bd15a26bdd744" datatype="html">
-        <source>404 page not found</source>
-        <target state="translated">404 Seite nicht gefunden</target>
-      </trans-unit>
       <trans-unit id="199d95857c74b0945b5c7130051a9ad293fc141b" datatype="html">
         <source>Verifying. Please wait...</source>
         <target state="translated">Überprüfe. Bitte warten...</target>
@@ -41,6 +37,10 @@
       <trans-unit id="b0c63e3c398d5d20ae7b05e1ba6dbea59c54cdb9" datatype="html">
         <source>Unknown error</source>
         <target state="translated">Unbekannter Fehler</target>
+      </trans-unit>
+      <trans-unit id="ab31b71295a1bc9475469eec819bd15a26bdd744" datatype="html">
+        <source>404 page not found</source>
+        <target state="translated">404 Seite nicht gefunden</target>
       </trans-unit>
       <trans-unit id="58610493dd8cd0e06038f58bb1df23a9f2158065" datatype="html">
         <source>Invalid link, please contact support.</source>
@@ -153,6 +153,30 @@
       <trans-unit id="6676f052ab9d1ed83317074f054f2ec6e896f0cc" datatype="html">
         <source>Reset password</source>
         <target state="translated">Passwort zurücksetzen</target>
+      </trans-unit>
+      <trans-unit id="1e035e6ccfab771cad4226b2ad230cb0d4a88cba" datatype="html">
+        <source>Success</source>
+        <target state="translated">Erfolg</target>
+      </trans-unit>
+      <trans-unit id="64656e08ee0ccfc3037098b819e1eb51bed0fbbc" datatype="html">
+        <source>Fail</source>
+        <target state="translated">Scheitern</target>
+      </trans-unit>
+      <trans-unit id="6429c9e3b1f52aeddf82fa84cb9ee028e0a4decc" datatype="html">
+        <source>Processing buying a voucher.</source>
+        <target state="translated">Bearbeitung des Kaufs eines Gutscheins.</target>
+      </trans-unit>
+      <trans-unit id="5d87314cda42c0b803a31b9f4893c6b6a08bcae1" datatype="html">
+        <source>Please wait...</source>
+        <target state="translated">Warten Sie mal...</target>
+      </trans-unit>
+      <trans-unit id="0828a53f2f0cdc9ed72af03306b922b5af2d23b1" datatype="html">
+        <source>Your payment was successful.</source>
+        <target state="translated">Ihre Zahlung war erfolgreich.</target>
+      </trans-unit>
+      <trans-unit id="9c37ecbc1548aadc4b37fb8d3528980e1826945b" datatype="html">
+        <source>Something went wrong, please try again or contact support.</source>
+        <target state="translated">Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder wenden Sie sich an den Support.</target>
       </trans-unit>
     </body>
   </file>
